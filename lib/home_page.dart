@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final _appBarTitle = ['资讯', '动弹', '发现', '我的'];
+  final _appBarTitle = ['menu', 'shop', 'discover', 'mine'];
   List<NavigationIconView> _navigationIconViews;
   var _currentIndex = 0;
   List<Widget> _pages;
@@ -24,19 +24,19 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _navigationIconViews = [
       NavigationIconView(
-          title: '资讯',
+          title: 'menu',
           iconPath: 'assets/images/ic_nav_news_normal.png',
           activeIconPath: 'assets/images/ic_nav_news_actived.png'),
       NavigationIconView(
-          title: '动弹',
+          title: 'shop',
           iconPath: 'assets/images/ic_nav_tweet_normal.png',
           activeIconPath: 'assets/images/ic_nav_tweet_actived.png'),
       NavigationIconView(
-          title: '发现',
+          title: 'discover',
           iconPath: 'assets/images/ic_nav_discover_normal.png',
           activeIconPath: 'assets/images/ic_nav_discover_actived.png'),
       NavigationIconView(
-          title: '我的',
+          title: 'mine',
           iconPath: 'assets/images/ic_nav_my_normal.png',
           activeIconPath: 'assets/images/ic_nav_my_pressed.png'),
     ];
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
       drawer: MyDrawer(
         headImgPath: 'assets/images/cover_img.jpg',
         menuIcons: [Icons.send, Icons.home, Icons.error, Icons.settings],
-        menuTitles: ['发布动弹', '动弹小黑屋', '关于', '设置'],
+        menuTitles: ['aaa', 'bbb', '关于', '设置'],
       ),
     );
   }

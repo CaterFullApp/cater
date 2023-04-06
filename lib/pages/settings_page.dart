@@ -21,18 +21,18 @@ class _SettingsPageState extends State<SettingsPage> {
         iconTheme: IconThemeData(color: Color(AppColors.APPBAR)),
       ),
       body: Center(
-        child: FlatButton(
-            onPressed: () {
-              //退出登录
-              DataUtils.clearLoginInfo().then((_) {
-                eventBus.fire(LogoutEvent());
-                Navigator.of(context).pop();
-              });
-            },
-            child: Text(
-              '退出登录',
-              style: TextStyle(fontSize: 25.0),
-            )),
+        // child: FlatButton(
+        //     onPressed: () {
+        //       //退出登录
+        //       DataUtils.clearLoginInfo().then((_) {
+        //         eventBus.fire(LogoutEvent());
+        //         Navigator.of(context).pop();
+        //       });
+        //     },
+        //     child: Text(
+        //       '退出登录',
+        //       style: TextStyle(fontSize: 25.0),
+        //     )),
       ),
     );
   }

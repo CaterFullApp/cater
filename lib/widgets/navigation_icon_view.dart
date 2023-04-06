@@ -22,8 +22,8 @@ class NavigationIconView {
               width: 20.0,
               height: 20.0,
             ),
+            label: title,
             activeIcon: Image.asset(activeIconPath,
               width: 20.0,
-              height: 20.0,),
-            title: Text(title));
+              height: 20.0,),);
 }

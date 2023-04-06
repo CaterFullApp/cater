@@ -90,7 +90,7 @@ class LoginPage extends StatelessWidget {
                             Container(
                               padding: EdgeInsets.all(8.0),
                               decoration: BoxDecoration(
-                                  border: Border(bottom: BorderSide(color: (Colors.grey[100])!))
+                                  border: Border(bottom: BorderSide(color: (Colors.grey[100])))
                               ),
                               child: TextField(
                                 decoration: InputDecoration(

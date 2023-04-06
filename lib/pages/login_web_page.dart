@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_osc_client/constants/constants.dart'
+import 'package:cater/constants/constants.dart'
     show AppColors, AppInfos, AppUrls;
-import 'package:flutter_osc_client/utils/data_utils.dart';
-import 'package:flutter_osc_client/utils/net_utils.dart';
+import 'package:cater/utils/data_utils.dart';
+import 'package:cater/utils/net_utils.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:flutter/cupertino.dart';
 

@@ -17,13 +17,13 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   List menuTitles = [
-    '我的消息',
-    '阅读记录',
-    '我的博客',
-    '我的问答',
-    '我的活动',
-    '我的团队',
-    '邀请好友',
+    'aaa',
+    'bbb',
+    'ccc',
+    'ddd',
+    'eee',
+    'fff',
+    'ggg',
   ];
   List menuIcons = [
     Icons.message,
@@ -185,7 +185,7 @@ class _ProfilePageState extends State<ProfilePage> {
               height: 10.0,
             ),
             Text(
-              userName ??= '点击头像登录',
+              userName ??= 'click avatar to login',
               style: TextStyle(color: Color(0xffffffff)),
             ),
             //用户名

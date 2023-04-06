@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cater/page/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cater/common/event_bus.dart';
 import 'package:cater/constants/constants.dart';
@@ -120,17 +121,17 @@ class _NewsListPageState extends State<NewsListPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('由于openapi限制，必须登录才能获取资讯！'),
+            Text('this is menu page'),
             InkWell(
               onTap: () async {
                 final result = await Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => LoginWebPage()));
+                    MaterialPageRoute(builder: (context) => LoginPage()));
                 if (result != null && result == 'refresh') {
                   //登录成功
                   eventBus.fire(LoginEvent());
                 }
               },
-              child: Text('去登录'),
+              child: Text('login'),
             ),
           ],
         ),

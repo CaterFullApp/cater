@@ -109,12 +109,12 @@ class _TweetPageState extends State<TweetPage>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('必须登录才能查看动弹信息！'),
+            Text('aaaa！'),
             InkWell(
               child: Container(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  '马上登录',
+                  'login',
                   style: TextStyle(color: Color(0xff0000ff)),
                 ),
               ),

@@ -122,7 +122,7 @@ class _PublishTweetPageState extends State<PublishTweetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false, //防止键盘弹出 导致超出屏幕
+
       appBar: AppBar(
         elevation: 0.0,
         title: Text(
@@ -130,25 +130,7 @@ class _PublishTweetPageState extends State<PublishTweetPage> {
           style: TextStyle(color: Colors.white),
         ),
         iconTheme: IconThemeData(color: Colors.white),
-        actions: <Widget>[
-          Builder(
-            builder: (context) {
-              return FlatButton(
-                onPressed: () {
-                  //发布动弹
-                  DataUtils.getAccessToken().then((token) {
-                    //网络请求
-                    _publishTweet(context, token);
-                  });
-                },
-                child: Text(
-                  '发送',
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
-                ),
-              );
-            },
-          )
-        ],
+
       ),
       body: FutureBuilder(
         future: _imageFile,
@@ -224,19 +206,19 @@ class _PublishTweetPageState extends State<PublishTweetPage> {
   }
 
   void _showSnackBar(BuildContext context, String message) {
-    Scaffold.of(context).showSnackBar(new SnackBar(
-      content: new Text(message),
-      duration: Duration(milliseconds: 500),
-    ));
+    // Scaffold.of(context).showSnackBar(new SnackBar(
+    //   content: new Text(message),
+    //   duration: Duration(milliseconds: 500),
+    // ));
   }
 
   void _pickImage(BuildContext context) {
     // 如果已添加了9张图片，则提示不允许添加更多
     num size = fileList.length;
     if (size >= 9) {
-      Scaffold.of(context).showSnackBar(new SnackBar(
-        content: new Text("最多只能添加9张图片！"),
-      ));
+      // Scaffold.of(context).showSnackBar(new SnackBar(
+      //   content: new Text("最多只能添加9张图片！"),
+      // ));
       return;
     }
     showModalBottomSheet<void>(
